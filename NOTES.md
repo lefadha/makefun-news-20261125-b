@@ -26,9 +26,9 @@ six at 300 px — 29 stories all set at 11 px, which is mush at the size the jud
 ## The one change in this arm
 
 Structure and type size, nothing else: three leads with a drawn scene and a 28 px headline, six
-second-tier stories at 20 px sans bold, 24 one-line briefs at 13.5 px, and the date set at 22 px so
-it survives 300 px. Story count went 29 -> 32, regions 8. Every line of text is at 13 px or larger;
-nothing is under it.
+second-tier stories at 20 px sans bold, 23 one-line briefs at 13.5 px, and the date set at 22 px so
+it survives 300 px. Story count went 29 -> 32 (3 + 6 + 23), regions 8. Every line of text is at
+13 px or larger; nothing is under it.
 
 Measured after the change, same OCR method: 55 runs at 300 px, and at that size the date, all three
 lead headlines, all six second-tier headlines, and the figures 74, 8.2m, 4.9%, 36% all read whole.
@@ -38,5 +38,6 @@ Full size reads 32/32 headlines and 23/23 briefs.
 
 No photographs, no borrowed artwork, no text addressed to the judge. The three scenes are drawn from
 Pillow primitives (rectangles, polygons, ellipses) at 2x and downsampled with LANCZOS, so the file is
-our own work end to end and renders byte-identically on every run (sha e3026678677c before the type
-change, recomputed in verify.py on each run).
+our own work end to end and renders byte-identically on every run: the shipped file is 463,737 B,
+sha256 524fcc572803…, and `verify.py` re-renders it twice and compares both against the committed
+bytes on every run.

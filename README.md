@@ -10,7 +10,7 @@ one 1024x1024 image that sums up Wednesday 25 November 2026.
 The page is laid out the way a front page is: the day in a masthead date that still reads at
 300 pixels across, a strapline carrying 32 stories from 8 regions, region chips whose counts add
 up to the story count, THE DAY IN NUMBERS, three drawn leads at 28 px, six second-tier stories at
-20 px, and 24 one-line briefs with their UTC times. Every story names the outlets that ran it.
+20 px, and 23 one-line briefs with their UTC times. Every story names the outlets that ran it.
 Nothing is invented: `stories.py` was written from our own scan of 37 wire feeds between 00:00 and
 04:00 GMT on the day, and each entry keeps the place, desk, status, time and sources we read.
 
